@@ -290,6 +290,11 @@
         <source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>
 
 
+        <source-file src="src/android/res/xml/provider_paths.xml" target-dir="res/xml"/>
+
+
+
+
 
         <framework src="com.android.support:appcompat-v7:25.1.1" />
         <framework src="com.github.chrisbanes.photoview:library:1.2.4" />

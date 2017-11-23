@@ -73,7 +73,7 @@ quality                    | Qualidade da imagem padrão 100
 ### Modifique o nome do pacote
 adicione o plugin ao projeto após a primeira compilação direta, a implementação dos seguintes passos
 
-- Diretório global do diretório de pesquisa global, substitua todos os `com.your.package.name` pelo nome do pacote quando você cria seu próprio projeto.
+- Diretório global do diretório de pesquisa global, substitua todos os `com.monsanto.customer.QionCloud` pelo nome do pacote quando você cria seu próprio projeto.
 - construir
 
 ### build não suporta o problema do operador Diamond

@@ -14,7 +14,7 @@ import com.giants.imagepicker.bean.ImageItem;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import com.your.package.name.R;
+import com.monsanto.customer.QionCloud.R;
 
 
 public class ImageDataSource implements LoaderManager.LoaderCallbacks<Cursor> {

@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.giants.imagepicker.loader.ImageLoader;
-import com.your.package.name.R;
+import com.monsanto.customer.QionCloud.R;
 
 import java.io.File;
 

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.net.Uri;
 import android.widget.ImageView;
 
-import com.your.package.name.R;
+import com.monsanto.customer.QionCloud.R;
 import com.giants.imagepicker.loader.ImageLoader;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.Picasso;

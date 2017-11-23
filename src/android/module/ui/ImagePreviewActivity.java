@@ -11,7 +11,7 @@ import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.giants.imagepicker.ImagePicker;
-import com.your.package.name.R;
+import com.monsanto.customer.QionCloud.R;
 import com.giants.imagepicker.bean.ImageItem;
 import com.giants.imagepicker.view.SuperCheckBox;
 

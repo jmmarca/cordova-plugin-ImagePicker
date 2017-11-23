@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.giants.imagepicker.ImagePicker;
-import com.your.package.name.R;
+import com.monsanto.customer.QionCloud.R;
 import com.giants.imagepicker.util.Utils;
 import com.giants.imagepicker.adapter.ImagePageAdapter;
 import com.giants.imagepicker.DataHolder;

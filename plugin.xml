@@ -277,6 +277,13 @@
 		<source-file src="src/android/res/values-pt/strings.xml" target-dir="res/values-pt"/>
         <source-file src="src/android/res/values-pt/strings.xml" target-dir="res/values"/>
 
+        <source-file src="src/android/res/values/attrs.xml" target-dir="res/values-en"/>
+        <source-file src="src/android/res/values/colors.xml" target-dir="res/values-en"/>
+        <source-file src="src/android/res/values/styles.xml" target-dir="res/values-en"/>     
+
+        <source-file src="src/android/res/values/attrs.xml" target-dir="res/values-pt"/>
+        <source-file src="src/android/res/values/colors.xml" target-dir="res/values-pt"/>
+        <source-file src="src/android/res/values/styles.xml" target-dir="res/values-pt"/>            
 
         <framework src="com.android.support:appcompat-v7:25.1.1" />
         <framework src="com.github.chrisbanes.photoview:library:1.2.4" />

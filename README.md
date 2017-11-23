@@ -61,12 +61,12 @@ ImagePicker.getPictures(function(result) {
 
 ## Explicação dos Parâmetros
 
-| Parâmetros de Configuração | Parâmetro Significado                              |
-| : -----------------------: |: ------------------------------------------------: |
-| maximumImagesCount         | Multi-select o número de restrições, o padrão é 9  |
-| width                      | Definir a largura da imagem, o padrão é 1920       |
-| height                     | Define a altura da imagem, o padrão é 1440         |
-| quality                    | Qualidade da imagem padrão 100                     |
+Parâmetros de Configuração | Parâmetro Significado
+-------------------------- | ----------------------------------------------------
+maximumImagesCount         | Multi-select o número de restrições, o padrão é 9   
+width                      | Definir a largura da imagem, o padrão é 1920
+height                     | Define a altura da imagem, o padrão é 1440
+quality                    | Qualidade da imagem padrão 100
 
 ## Android Notas
 

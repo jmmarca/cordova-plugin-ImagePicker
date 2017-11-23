@@ -31,7 +31,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:paddingLeft="8dp"
-            android:text="@string/origin_size"
+            android:text="origin_size"
             android:textColor="#FFF"/>
 
         <com.giants.imagepicker.view.SuperCheckBox
@@ -45,7 +45,7 @@
             android:drawablePadding="4dp"
             android:includeFontPadding="true"
             android:paddingLeft="8dp"
-            android:text="@string/origin"
+            android:text="origin"
             android:textColor="#ffffff"/>
     </RelativeLayout>
 </RelativeLayout>

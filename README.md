@@ -49,7 +49,7 @@ Nota: o projeto do Android primeiro não cria diretamente, veja [nota do Android
 
 ## Use
 
-### Nota: Os seguintes parâmetros passados ​​na demo não podem ser aprovados, o programa padrão definirá os seguintes parâmetros de aprovação de demonstração, se você precisar passar parâmetros, deve passar juntos, 'não pode ser menos ', ou o erro do json será reportado .
+### Nota: Os seguintes parâmetros passados na versão demo não podem ser aprovados, o programa padrão definirá os seguintes parâmetros de aprovação de demonstração, se você precisar passar parâmetros, deve passar juntos, 'não pode ser menos ', ou o erro do json será reportado .
 
 ```javascript
 ImagePicker.getPictures(function(result) {
@@ -59,21 +59,21 @@ ImagePicker.getPictures(function(result) {
 }, { maximumImagesCount : 9, width : 1920, height : 1440, quality : 100 });
 ```
 
-## significado do parâmetro
+## Explicação dos Parâmetros
 
-|Parâmetros de Configuração| Parâmetro Significado       |
-|: ------------------:     |: -------------------------: |
-| maximumImagesCount       | Multi-select o número de restrições, o padrão é 9 |
-| width                    | Definir a largura da imagem, o padrão é 1920 |
-| height                   | Define a altura da imagem, o padrão é 1440 |
-| quality                  | Qualidade da imagem padrão 100 |
+| Parâmetros de Configuração | Parâmetro Significado                              |
+| : -----------------------: |: ------------------------------------------------: |
+| maximumImagesCount         | Multi-select o número de restrições, o padrão é 9  |
+| width                      | Definir a largura da imagem, o padrão é 1920       |
+| height                     | Define a altura da imagem, o padrão é 1440         |
+| quality                    | Qualidade da imagem padrão 100                     |
 
 ## Android Notas
 
 ### Modifique o nome do pacote
 adicione o plugin ao projeto após a primeira compilação direta, a implementação dos seguintes passos
 
-- Diretório global do diretório de pesquisa global, substitua todos os "com.your.package.name" pelo nome do pacote quando você cria seu próprio projeto.
+- Diretório global do diretório de pesquisa global, substitua todos os `com.your.package.name` pelo nome do pacote quando você cria seu próprio projeto.
 - construir
 
 ### build não suporta o problema do operador Diamond

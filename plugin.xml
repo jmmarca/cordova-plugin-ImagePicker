@@ -7,9 +7,7 @@
   to you under the Apache License, Version 2.0 (the
   "License"); you may not use this file except in compliance
   with the License.  You may obtain a copy of the License at
-
     http://www.apache.org/licenses/LICENSE-2.0
-
   Unless required by applicable law or agreed to in writing,
   software distributed under the License is distributed on an
   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -50,12 +48,12 @@
 
         <preference name="CAMERA_USAGE_DESCRIPTION" default=" " />
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-            <string>Use a câmera</string>
+            <string>使用相机</string>
         </config-file>
 
         <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default=" " />
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
-            <string>Use álbuns</string>
+            <string>使用相册</string>
         </config-file>
 
         <header-file src="src/ios/ImagePickerMain.h"/>
@@ -158,21 +156,21 @@
 
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
-        <!-- SDCard permissão para gravar dados. -->
-        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-        <!-- Criar e apagar arquivos no SDCard permissões -->
-        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-        <!-- SDCard permissão para gravar dados. -->
-        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-        <!-- A câmera de permissões -->
-        <uses-permission android:name="android.permission.CAMERA"/>
+
+            <!-- 在SDCard中创建与删除文件权限 -->
+            <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+            <!-- 往SDCard写入数据权限 -->
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <!-- 从SDCard读取数据权限 -->
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <!-- 相机权限 -->
+            <uses-permission android:name="android.permission.CAMERA"/>
 
         </config-file>
 
-
         <config-file target="res/values/strings.xml" parent="/*">
-            <string name="all_images">Todas as Imagens</string>
-            <string name="folder_image_count">Um total de 1.</string>
+            <string name="all_images">全部图片</string>
+            <string name="folder_image_count">共%1$d张</string>
             <string name="preview_image_count">%1$s/%2$s</string>
             <string name="select_limit">最多选择%1$s张图片</string>
             <string name="complete">完成</string>
@@ -183,13 +181,18 @@
             <string name="origin_size">原图(%1$s)</string>
         </config-file>
 
-
         <config-file target="res/values/colors.xml" parent="/*">
+
             <color name="theme_body">#cc22292c</color>
+
             <color name="black">#000000</color>
+
             <color name="status_bar">#303135</color>
+
             <color name="top_bar">#9f556061</color>
+
             <color name="transparent">#00000000</color>
+
         </config-file>
 
 
@@ -285,19 +288,6 @@
         <source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>
 
 
-        <source-file src="src/android/res/xml/provider_paths.xml" target-dir="res/xml"/>
-
-		<source-file src="src/android/res/values-en/strings.xml" target-dir="res/values-en"/>
-		<source-file src="src/android/res/values-pt/strings.xml" target-dir="res/values-pt"/>
-        <source-file src="src/android/res/values-pt/strings.xml" target-dir="res/values"/>
-
-        <source-file src="src/android/res/values/attrs.xml" target-dir="res/values-en"/>
-        <source-file src="src/android/res/values/colors.xml" target-dir="res/values-en"/>
-        <source-file src="src/android/res/values/styles.xml" target-dir="res/values-en"/>     
-
-        <source-file src="src/android/res/values/attrs.xml" target-dir="res/values-pt"/>
-        <source-file src="src/android/res/values/colors.xml" target-dir="res/values-pt"/>
-        <source-file src="src/android/res/values/styles.xml" target-dir="res/values-pt"/>            
 
         <framework src="com.android.support:appcompat-v7:25.1.1" />
         <framework src="com.github.chrisbanes.photoview:library:1.2.4" />
@@ -308,6 +298,9 @@
         <framework src="com.github.bumptech.glide:glide:3.7.0"/>
 
     </platform>
+
+
+
 
 
 </plugin>

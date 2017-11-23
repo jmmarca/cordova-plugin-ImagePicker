@@ -151,13 +151,13 @@ public class ImageGridActivity extends ImageBaseActivity implements ImageDataSou
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 new ImageDataSource(this, null, this);
             } else {
-                showToast("权限被禁止，无法选择本地图片");
+                showToast("A permissão foi proibida, não é possível escolher uma imagem local");
             }
         } else if (requestCode == REQUEST_PERMISSION_CAMERA) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 imagePicker.takePicture(this, ImagePicker.REQUEST_CODE_TAKE);
             } else {
-                showToast("权限被禁止，无法打开相机");
+                showToast("Foi proibida a permissão para abrir a câmera");
             }
         }
     }
@@ -178,7 +178,7 @@ public class ImageGridActivity extends ImageBaseActivity implements ImageDataSou
             finish();
         } else if (id == R.id.btn_dir) {
             if (mImageFolders == null) {
-                Log.i("ImageGridActivity", "您的手机没有图片");
+                Log.i("ImageGridActivity", "O seu telefone não tem imagem");
                 return;
             }
             //点击文件夹按钮

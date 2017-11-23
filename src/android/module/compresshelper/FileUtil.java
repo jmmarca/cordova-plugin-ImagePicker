@@ -28,7 +28,7 @@ public class FileUtil {
     private static final int DEFAULT_BUFFER_SIZE = 1024 * 4;
 
     private FileUtil() {
-        throw new UnsupportedOperationException("u can't instantiate me...");
+        throw new UnsupportedOperationException("Não Pode instanciar-me...");
     }
 
     /**

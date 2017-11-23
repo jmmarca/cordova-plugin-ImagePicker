@@ -43,7 +43,7 @@ public class DataHolder {
 
     public Object retrieve(String id) {
         if (data == null || mInstance == null){
-            throw new RuntimeException("你必须先初始化");
+            throw new RuntimeException("Você deve inicializar");
         }
         return data.get(id);
     }

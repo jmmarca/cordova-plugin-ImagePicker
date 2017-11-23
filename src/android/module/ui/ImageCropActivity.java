@@ -108,7 +108,7 @@ public class ImageCropActivity extends ImageBaseActivity implements View.OnClick
     public void onBitmapSaveSuccess(File file) {
 //        Toast.makeText(ImageCropActivity.this, "裁剪成功:" + file.getAbsolutePath(), Toast.LENGTH_SHORT).show();
 
-        //裁剪后替换掉返回数据的内容，但是不要改变全局中的选中数据
+        //Depois de cortar e substituir o conteúdo de dados de Retorno, MAS não muda a data seleccionada no global
         mImageItems.remove(0);
         ImageItem imageItem = new ImageItem();
         imageItem.path = file.getAbsolutePath();

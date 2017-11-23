@@ -23,7 +23,7 @@ import java.io.IOException;
 public class BitmapUtil {
 
     private BitmapUtil() {
-        throw new UnsupportedOperationException("u can't instantiate me...");
+        throw new UnsupportedOperationException("u Não Pode instanciar...");
     }
 
     /**

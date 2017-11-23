@@ -4,11 +4,11 @@ Muito obrigado [South dust] (https://github.com/nanchen2251) e [banchichen] (htt
 
 Uma escolha múltipla de suporte, álbum de fotos para alcançar uma foto, visualização, (compressão de imagem do Android) e outras funções
 
-função ##
+## Funções
 
-- diretório do álbum
+- Diretório do álbum
 - Escolha mais fotos
-- foto interna do álbum de fotos
+- Foto interna do álbum de fotos
 - Visualizar a imagem selecionada
 - Compressão de imagem (Android)
 

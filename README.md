@@ -1,125 +1,125 @@
 # cordova-plugin-ImagePicker
 
-非常感谢[南尘](https://github.com/nanchen2251)和 [banchichen](https://github.com/banchichen) 提供的源码支持 多点star✨开源不容易，谢谢。扣扣群：240255635
+Muito obrigado [South dust] (https://github.com/nanchen2251) e [banchichen] (https://github.com/banchichen) suporte de código-fonte para a estrela multi-estrelas O código aberto não é fácil, obrigado. Grupo de fivelas de botões: 240255635
 
-一个支持多选，相册实现了拍照、预览、（Android 图片压缩）等功能
+Uma escolha múltipla de suporte, álbum de fotos para alcançar uma foto, visualização, (compressão de imagem do Android) e outras funções
 
-## 功能
+função ##
 
-- 相册目录
-- 多选图
-- 相册内部拍照
-- 预览选中的图片
-- 图片压缩（Android）
+- diretório do álbum
+- Escolha mais fotos
+- foto interna do álbum de fotos
+- Visualizar a imagem selecionada
+- Compressão de imagem (Android)
 
-## 安装要求
+## Requisitos de instalação
 
-- Cordova Version >=5.0
-- Cordova-Android >=4.0
-- Cordova-iOS >=6.0
+- Cordova Version> = 5.0
+- Cordova-Android> = 4.0
+- Cordova-iOS> = 6.0
 
-## iOS Requirements 要求
+## iOS Requisitos de requisitos
 
-OS 6 or later. Requires ARC iOS6及以上系统可使用. ARC环境.
+OS 6 ou posterior. Requer ARC disponível para iOS6 e acima. Ambiente ARC.
 
-When system version is iOS6 or iOS7, Using AssetsLibrary. When system version is iOS8 or later, Using PhotoKit. 如果运行在iOS6或7系统上，用的是AssetsLibrary库获取照片资源。 如果运行在iOS8及以上系统上，用的是PhotoKit库获取照片资源。
+Quando a versão do sistema é iOS6 ou iOS7, Usando a AssetsLibrary. Quando a versão do sistema é iOS8 ou posterior, usando o PhotoKit. Se estiver executando no sistema iOS6 ou 7, use a biblioteca AssetsLibrary para obter recursos de fotos. Se estiver executando no iOS8 e acima, use a biblioteca PhotoKit para obter os recursos da foto.
 
-## 安装
+## instalação
 
-1. 命令行运行 `cordova plugin add https://github.com/giantss/cordova-plugin-ImagePicker.git`
-2. 命令行运行 cordova build --device
+1. Linha de comando 'plugin cordova adicionar https: // github.com / gigantes / cordova-plugin-ImagePicker.git`
+2. Execute cordova build --device a partir da linha de comando
 
-注意：Android 项目先不要直接 build ，见 [android注意事项](#android注意事项)。
+Nota: o projeto do Android primeiro não cria diretamente, veja [nota do Android] (# nota do Android).
 
-## Android 视频演示
+# Demo de video do Android
 
-[点击查看视频(mp4格式)](http://oqdxjvpc7.bkt.clouddn.com/111.mp4)<br>
-[点击查看视频(优酷)](http://v.youku.com/v_show/id_XMjg0NDg0NDIyMA==.html)
+[Clique para ver o vídeo (formato mp4)] (http://oqdxjvpc7.bkt.clouddn.com/111.mp4) <br>
+[Clique para ver o vídeo (Youku)] (http://v.youku.com/v_show/id_XMjg0NDg0NDIyMA==.html)
 
-## iOS 视频演示
+## iOS Video Demo
 
-[点击查看视频(mp4格式)](http://oqdxjvpc7.bkt.clouddn.com/ios1.mp4)<br>
-[点击查看视频(优酷)](http://v.youku.com/v_show/id_XMjg0NDg0NTU4OA==.html)
+[Clique para ver o vídeo (formato mp4)] (http://oqdxjvpc7.bkt.clouddn.com/ios1.mp4) <br>
+[Clique para ver o vídeo (Youku)] (http://v.youku.com/v_show/id_XMjg0NDg0NTU4OA==.html)
 
-## 效果图
+## renderings
 
-| Android         | iOS          |
-|:---------------:|:------------:|
-| <img src="./res/android.png" width="270px" height="480"> | <img src="./res/ios.jpg" width="270px" height="480"> |
+Android | iOS |
+|: ---------------: |: ------------: |
+| <img src = "./ res / android.png" width = "270px" height = "480"> | <img src = "./ res / ios.jpg" width = "270px" height = "480"> |
 
-## 使用方式
+## use
 
-### 注：目前下面demo中传入的参数都可以不传，程序默认会设置下面demo的传参数，如果需要传参数，都得一起传，`一个都不能少`，否则会报json错误。
+### Nota: Os seguintes parâmetros passados ​​na demo não podem ser aprovados, o programa padrão definirá os seguintes parâmetros de aprovação de demonstração, se você precisar passar parâmetros, deve passar juntos, `não pode ser menos ', ou o erro do json será reportado .
 
-```javascript
-ImagePicker.getPictures(function(result) {
-    alert(result);
-}, function(err) {
-    alert(err);
-}, { maximumImagesCount : 9, width : 1920, height : 1440, quality : 100 });
-```
+`` `javascript
+ImagePicker.getPictures (função (resultado) {
+    alerta (resultado);
+}, function (err) {
+    alerta (erro);
+}, {maximumImagesCount: 9, width: 1920, height: 1440, quality: 100});
+`` `
 
-## 参数含义
+## significado do parâmetro
 
-| 配置参数            | 参数含义                   |
-|:------------------:|:-------------------------:|
-| maximumImagesCount | 多选限制数量，默认为9        |
-| width              | 设置图片的width，默认为1920   |
-| height             | 设置图片的height，默认为1440  |
-| quality            | 图片质量 默认100            |
+Parâmetros de Configuração | Parâmetro Significado |
+|: ------------------: |: -------------------------: |
+| maximumImagesCount | Multi-select o número de restrições, o padrão é 9 |
+| largura | definir a largura da imagem, o padrão é 1920 |
+| height | define a altura da imagem, o padrão é 1440 |
+qualidade | qualidade da imagem padrão 100 |
 
-## android注意事项
+## android note
 
-### 修改包名
-add 插件到项目以后先不要直接 build ，执行下面的步骤
+### Modifique o nome do pacote
+adicione o plugin ao projeto após a primeira compilação direta, a implementação dos seguintes passos
 
-- 全局搜索插件android目录，将 `com.your.package.name` 全部替换成自己创建项目时的包名。
-- build
+- Diretório global do diretório de pesquisa global, substitua todos os "com.your.package.name" pelo nome do pacote quando você cria seu próprio projeto.
+- construir
 
-### build 不支持 diamond 运算符问题
-sourceCompatibility 1.6 不支持 diamond 运算符
-```
-错误: -source 1.6 中不支持 diamond 运算符
-        else imageFolders = new ArrayList<>();
-                                          ^
-  (请使用 -source 7 或更高版本以启用 diamond 运算符)
-```
-修改 Android 项目下面的 build.gradle 文件中的
-```
+### build não suporta o problema do operador Diamond
+sourceCompatibility 1.6 não suporta o operador de diamante
+`` `
+Erro: operador de diamante não suportado na fonte 1.6
+        else imageFolders = novo ArrayList <> ();
+                                          ^
+  (Use a fonte 7 ou posterior para habilitar o operador de diamante)
+`` `
+Modifique o projeto Android sob o arquivo build.gradle
+`` `
 compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_6
-    targetCompatibility JavaVersion.VERSION_1_6
+    sourceCompatibility JavaVersion.VERSION_1_6
+    targetCompatibility JavaVersion.VERSION_1_6
 }
-```
-改为
-```
+`` `
+Mudar para
+`` `
 compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_7
-    targetCompatibility JavaVersion.VERSION_1_7
+    sourceCompatibility JavaVersion.VERSION_1_7
+    targetCompatibility JavaVersion.VERSION_1_7
 }
-```
+`` `
 
-### 缺少 colors.xml、provider_paths.xml 文件问题
-出现下面错误
-```
-Error: /Users/guodapeng/Documents/Cordova/skateboard/platforms/android/gradlew: Command failed with exit code 1 Error output:
-/Users/guodapeng/Documents/Cordova/skateboard/platforms/android/res/drawable/selector_back_press.xml:4:29-46: AAPT: No resource found that matches the given name (at 'drawable' with value '@color/theme_body').
-```
-将 cordova-plugin-ImagePicker/src/android/res/values/ 目录的 colors.xml 文件复制到 platforms/android/res/values/ 目录下
+### faltando colors.xml, problema do arquivo provider_paths.xml
+Ocorreu o seguinte erro
+`` `
+Erro: / Usuários / guodapeng / Documentos / Cordova / skateboard / plataformas / android / gradlew: Comando falhado com o código de saída 1 Saída de erro:
+/Users/guodapeng/Documents/Cordova/skateboard/platforms/android/res/drawable/selector_back_press.xml:4:29-46: AAPT: Nenhum recurso encontrado que corresponde ao nome dado (em 'drawable' com valor '@ color / theme_body ').
+`` `
+Copie o arquivo colors.xml para o diretório cordova-plugin-ImagePicker / src / android / res / values ​​/ para as plataformas / android / res / values ​​/ directory
 
-出现下面错误
-```
-Error: /Users/guodapeng/Documents/Cordova/skateboard/platforms/android/gradlew: Command failed with exit code 1 Error output:
-/Users/guodapeng/Documents/Cordova/skateboard/platforms/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:66:35-54: AAPT: No resource found that matches the given name (at 'resource' with value '@xml/provider_paths').
-```
-将 cordova-plugin-ImagePicker/src/android/res/xml/ 目录的 provider_paths.xml 文件复制到 platforms/android/res/xml/ 目录下
+Ocorreu o seguinte erro
+`` `
+Erro: / Usuários / guodapeng / Documentos / Cordova / skateboard / plataformas / android / gradlew: Comando falhado com o código de saída 1 Saída de erro:
+/Users/guodapeng/Documents/Cordova/skateboard/platforms/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:66:35-54: AAPT: Nenhum recurso encontrado que corresponde ao nome dado (no 'recurso' com valor '@ xml / provider_paths').
+`` `
+Copie o arquivo provider_paths.xml do diretório cordova-plugin-ImagePicker / src / android / res / xml / para as plataformas / diretório android / res / xml /
 
-### 插件选图闪退问题
-在安装了扫描二维码插件时，在 patient-barcodescanner.gradle 文件中将 support-v4 修改为下面版本，可以解决闪退问题。
-```
+### problema de seleção de mapa de recuperação flash plug-in
+Ao instalar o plug-in de código QR, você pode contornar o problema de flashback alterando o suporte-v4 para a seguinte versão no arquivo patient-barcodescanner.gradle.
+`` `
 com.android.support:support-v4:25.3.1
-```
+`` `
 
-## License
+## Licença
 
-[The MIT License (MIT)](http://www.opensource.org/licenses/mit-license.html)
+[A Licença MIT (MIT)] (http://www.opensource.org/licenses/mit-license.html)
